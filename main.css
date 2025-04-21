@@ -1,0 +1,109 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /*outline: 1px solid rgba(0,0,0,0.1); ou border, se preferir */
+}
+
+body {
+    background: linear-gradient(100deg, #f7f1f1);
+}
+
+header {
+    padding: 16px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: #dfdddd;
+    border-radius: 6px;
+    color: rgb(39, 39, 39);
+    width: 65%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;  
+}
+
+form input {
+    background-color: #a2ada917;
+    border-color: #a2ada9;
+    border-radius: 5px;
+    height: 25px;
+    padding: 5px;
+}
+
+form button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+form button:hover {
+    background-color: #068f5c;   
+}
+
+.mensagens p {
+    color: rgb(255, 255, 255);
+    background-color: #1a1a1aa4;
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: none;
+}
+
+table {
+    table-layout: fixed;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+#lista-contatos tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#lista-contatos tr:nth-child(odd) {
+    background-color: #e4e4e4;
+}
+
+table td {
+    text-align: center;
+}
+
+thead th {
+    padding: 6px;
+}
+
+tfoot td {
+    padding: 4px;
+    font-weight: bold;
+}
+
+#lista-contatos td {
+    padding: 4px;
+}
+
+th i {
+    vertical-align: middle;
+}
+

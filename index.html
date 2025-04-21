@@ -1,0 +1,67 @@
+<!-- Na tarefa deste módulo, você irá criar uma aplicação de agenda de contatos.
+
+1) Construa uma tabela com duas colunas:
+
+    nome
+    telefone
+
+
+2) Construa um formulário no qual o usuário irá inserir o nome e telefone do contato e, ao clicar em cadastrar, uma linha
+será adicionada na tabela de contatos.
+
+3) Publique a aplicação na Vercel. Para isso será necessário criar um repositório no Github e alimentá-lo com o código do projeto;
+
+4) Cole na plataforma o link do projeto publicado na Vercel. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agenda de contatos</h1>
+        </header>
+        <form id="form-contato">
+            <div class="input-group">
+                <input type="text" id="nome" required placeholder="Nome do contato">
+                <input type="tel" id="numero" required placeholder="Numero do contato">
+            </div>
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <div class="mensagens">
+                        <p id="contato-existente">Atenção: Esse contato já se encontra na lista!</p>
+                        <p id="letra-detectada">Atenção: Digite apenas números!</p>
+                        <p id="menos-digitos">Atenção: São necessários 9 digitos!</p>
+                    </div>
+                    <th>
+                        <i class="fa-solid fa-person"></i> Nome
+                    </th>
+                    <th>
+                        <i class="fa-solid fa-phone"></i> Telefone
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="lista-contatos">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td id="contador">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
