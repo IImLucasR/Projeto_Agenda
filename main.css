@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(100deg, #f7f1f1);
+    background: linear-gradient(100deg, #e7e7e7, rgb(233, 231, 231));
 }
 
 header {
@@ -19,7 +19,6 @@ header {
 
 h1 {
     text-align: center;
-    background-color: #dfdddd;
     border-radius: 6px;
     color: rgb(39, 39, 39);
     width: 65%;
@@ -39,8 +38,8 @@ form {
 }
 
 form input {
-    background-color: #a2ada917;
-    border-color: #a2ada9;
+    background-color: #ffffffda;
+    border-color: #363636;
     border-radius: 5px;
     height: 25px;
     padding: 5px;
@@ -72,6 +71,7 @@ form button:hover {
 }
 
 table {
+    border: 1px solid;
     table-layout: fixed;
     width: 60%;
     border: 1px solid #ddd;

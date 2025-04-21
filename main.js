@@ -33,7 +33,7 @@ function confereDuplicado() {
 
 function verificaQuantidade() {
     const numeroValido = numero.value.trim();
-    return numeroValido.length === 9;
+    return numeroValido.length === 11;
 }
 
 function letrasInputNumero() {
